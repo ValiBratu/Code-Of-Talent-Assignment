@@ -1,22 +1,20 @@
 <template>
-<div>
 
     <ul class="navbar-nav mr-auto flex-column vertical-nav">
          <img src="../../assets/code-of-talent.png" alt="logo" class="logo-image">
       <li class="nav-item sidebar-li">
-        <a class="nav-link sidebar-link" href="#">Home</a>
+       
+         <router-link to="/" class="nav-link sidebar-link" >Home</router-link>
       </li>
       <li class="nav-item sidebar-li">
-        <a class="nav-link sidebar-link" href="#">Programs</a>
+        <router-link to="/programs" class="nav-link sidebar-link" >Programs</router-link>
       </li>
       <li class="nav-item sidebar-li">
-        <a class="nav-link sidebar-link" href="#">Participants</a>
+        <router-link to="/participants" class="nav-link sidebar-link" >Participants</router-link>
       </li>
       
     </ul>
-
-</div>
-    
+    <router-view/>
 </template>
 <script>
 export default {
