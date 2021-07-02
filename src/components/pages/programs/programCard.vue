@@ -39,6 +39,9 @@ export default {
     width: 400px;
     border-radius: 15px;
     height: 320px;
+    text-align: center;
+    margin-bottom: 30px;
+
 }
 .parahraph{
 overflow: hidden;
@@ -49,5 +52,11 @@ overflow: hidden;
 }
 .title{
     text-align: center;
+    font-weight: bold;
+    color: #2A2E33;
+}
+
+.card-block{
+    text-align: left;
 }
 </style>
