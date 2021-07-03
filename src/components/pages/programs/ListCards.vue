@@ -81,7 +81,7 @@ export default {
 
 .program-header-text{
   
-    margin-left:-10px;
+    margin-left:20px;
     margin-top: 30px;
     font-size: 2rem;
     font-weight: bold;

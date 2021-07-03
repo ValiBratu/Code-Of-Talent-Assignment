@@ -3,7 +3,7 @@
 
   <navbar ></navbar>
   <left-sidebar></left-sidebar>
- 
+
 </template>
 
 <script>
