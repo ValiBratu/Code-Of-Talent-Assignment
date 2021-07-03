@@ -12,7 +12,7 @@
             </td>
 
             <td>
-                
+            
                 <span>{{data.email}}</span>
                 </td>
 
@@ -27,24 +27,27 @@
             </td>
 
             <td>
-                <div class="btn-group dropleft">
-                    <button type="button" class="btn btn-outline-*" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="bi bi-three-dots-vertical dropdown-btn"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                       <button class="dropdown-item" >Remove Participant</button>
-                    </div>
-                    </div>
+                <remove-participant v-bind:userId="data.id"  @updateRows="removeParticipantFromTable"></remove-participant>
                 
             </td>
             
 </template>
 
 <script>
+import removeParticipant from './removeParticipant.vue'
 export default {
+  components: { removeParticipant },
     name:"participantRow",
-    props:["data"]
+    props:["data"],
+    emits:['updateTb'],
+    methods:{
+        removeParticipantFromTable:function(id){
+            
+           this.$emit('updateTb',id)
+        }
+    }
 }
+
 </script>
 
 <style scoped>
@@ -126,15 +129,6 @@ export default {
     border-radius: 5px;
 }
 
-.btn, .btn-outline-{
-border: 1px solid #DADDE7;
-background:transparent;
-}
-
-
-.dropdown-btn{
-    color:#CACDD8;
-}
 
 
 .name-span{

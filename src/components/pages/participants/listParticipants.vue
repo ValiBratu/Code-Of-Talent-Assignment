@@ -20,8 +20,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for=" (participant,i) in participants" v-bind:key="i">
-            <participant-row   v-bind:data="participant"></participant-row>
+            <tr v-for=" (participant,i) in participants" v-bind:key="i" >
+                
+                <participant-row   v-bind:data="participant" @updateTb="updateTable" ></participant-row>
             </tr>
         </tbody>
         </table>
@@ -46,9 +47,18 @@ export default {
         .then(data=>{
            
             this.participants=data;
-            console.log(data);
+            
         })
         .catch(err=>console.log(err))
+    },
+    methods:{
+        updateTable:function(id){
+            
+            var updatedUserList=this.participants.filter(user=>user.id !== id)
+            this.participants= updatedUserList;
+
+        }
+
     }
 }
 </script>
