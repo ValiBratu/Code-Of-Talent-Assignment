@@ -7,7 +7,7 @@
                 </div>
             </th>
             <td>
-                <span class="dot"><p class="circle-p"> {{data.first_name[0]+""+data.last_name[0]}}</p></span>
+                <span class="dot"><p class="circle-p"> {{data.first_name[0].toUpperCase()+""+data.last_name[0].toUpperCase()}}</p></span>
                  <span class="name-span">{{data.first_name+" "+data.last_name}}</span>
             </td>
 

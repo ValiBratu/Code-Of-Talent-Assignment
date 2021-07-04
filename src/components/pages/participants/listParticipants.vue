@@ -3,8 +3,11 @@
     <div class ="row" >
         <div class="program-header-text" >
             <p>Participants</p>
+        
         </div>
+        <add-participant  @addUser="addNewUser"></add-participant>      
     </div>
+
 
     <div class="table-div">
         <div >
@@ -31,9 +34,12 @@
 </template>
 
 <script>
+import AddParticipant from './addParticipant.vue'
 import participantRow from './participantRow.vue'
+
+
 export default {
-  components: { participantRow },
+  components: { participantRow, AddParticipant },
     name:"listParticipants",
     props:["api"],
     data(){
@@ -57,6 +63,23 @@ export default {
             var updatedUserList=this.participants.filter(user=>user.id !== id)
             this.participants= updatedUserList;
 
+        },
+        addNewUser:function(data){
+            let newUser={
+                id:this.getIdForNewUser(),
+                first_name:data.first_name,
+                last_name:data.last_name,
+                email:data.email,
+                is_active:data.is_active,
+                is_invited:data.is_invited
+            }
+
+            this.participants.push(newUser);
+        },
+        getIdForNewUser:function(){
+            const ids = this.participants.map(user => user.id);
+            const sorted = ids.sort((a, b) => b - a);
+            return sorted[0]+1;
         }
 
     }

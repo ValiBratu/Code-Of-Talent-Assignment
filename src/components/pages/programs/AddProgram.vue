@@ -29,7 +29,7 @@
             </div>
                 <p id="warning" class="warning-p"></p>
             <div class="modal-footer modal-footer-line">
-                <button type="button" class=" blue-round-btn btn btn-primary" @click="saveProgram">Save changes</button>
+                <button type="button" class=" blue-round-btn btn btn-primary save-btn" @click="saveProgram">Save</button>
             </div>
             </div>
         </div>
@@ -142,5 +142,10 @@ export default {
 .warning-p{
     color:red;
     margin-left: 35px;
+}
+
+.save-btn{
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
 </style>
