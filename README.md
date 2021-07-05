@@ -5,6 +5,20 @@
 npm install
 ```
 
+## Api setup
+```
+npm install json-server
+```
+or
+```
+npm install -g json-server
+```
+### Run json-server
+```
+json-server --watch database.json
+```
+It may be required to run this command in the src/data folder
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
