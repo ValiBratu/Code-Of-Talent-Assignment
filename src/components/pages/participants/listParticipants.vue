@@ -77,6 +77,10 @@ export default {
             this.participants.push(newUser);
         },
         getIdForNewUser:function(){
+            if(this.participants.length === 0){
+                return 1;
+            }
+
             const ids = this.participants.map(user => user.id);
             const sorted = ids.sort((a, b) => b - a);
             return sorted[0]+1;
