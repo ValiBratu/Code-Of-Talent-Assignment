@@ -14,6 +14,11 @@
       "id": 2,
       "title": "Onboarding",
       "description": "Integer sollicitudin leo ut lobortis condimentum. Nunc non nisl a justo imperdiet bibendum at ut est. Etiam eleifend dapibus posuere. Curabitur commodo mi sit amet consequat cursus. Pellentesque sed quam finibus, placerat dolor non, dapibus nisl. Donec aliquet condimentum sapien eu pretium. Integer fermentum ultrices justo eu porttitor. Praesent in venenatis quam. Pellentesque rutrum fermentum eros, nec elementum metus dictum et."
+    },
+    {
+      "title": "Test",
+      "description": "testarea",
+      "id": 3
     }
   ],
   "participants": [{
