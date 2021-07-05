@@ -118,6 +118,7 @@ export default {
                 document.getElementById("email").value="";
                 document.getElementById("isActive").checked=false;
                 document.getElementById("isInvited").checked=false;
+                document.getElementById("warning").textContent="";
                 document.getElementById("closeButton").click();
                 this.$emit('addUser',data);
                 return;
@@ -139,12 +140,11 @@ export default {
     font-size: 16px;
     font-weight: bold;
     margin-top: 15px;
-    padding: 10px 0;
     margin-left: 40px;
 }
 .modal-body-form{
     margin-left: 35px;
-    height: 400px;
+    height: 320px;
 }
 .modal-box{
     width: 800px;

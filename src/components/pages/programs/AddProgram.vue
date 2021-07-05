@@ -21,7 +21,7 @@
                 <br>
                 <input type="text" id="programName" class="name-input inputs" placeholder="Enter the name of your program"/>
                 <br>
-                <label for="programDesc" class="modal-title modal-text inputs-headers">Program name:</label>
+                <label for="programDesc" class="modal-title modal-text inputs-headers">Program description:</label>
                 <br>
                 <textarea id="programDesc" class="inputs description-input" placeholder="Program description"></textarea>
                 <br>

@@ -51,8 +51,6 @@ export default {
                 title:NewItem.title,
                 description:NewItem.description
             }
-           
-            console.log(newProgram)
             this.programs.push(newProgram);
         },
         getIdForNewProgram:function(){
@@ -63,7 +61,7 @@ export default {
     }
 }
 
-//  v-for=" (program,i) in programs" v-bind:key="i"
+
 </script>
 
 <style scoped>

@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light upper-navbar">
   <div class="container navbar-items-right">
     <p class="navbar-name">John Doe</p>
-    <img src="../../assets/navbar-user.jpg" alt="navbar-user-photo" class="navbar-image"/>
+    <img src="../../assets/navbar-user.png" alt="navbar-user-photo" class="navbar-image"/>
   </div>
 </nav>
 
