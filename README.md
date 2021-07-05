@@ -1,4 +1,4 @@
-# cot-assesment
+# cot-assessment
 
 ## Project setup
 ```
