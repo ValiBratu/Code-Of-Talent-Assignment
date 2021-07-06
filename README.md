@@ -7,7 +7,7 @@ npm install
 
 ### Run json-server
 ```
-json-server --watch data/src/database.json
+json-server --watch src/data/database.json
 ```
 
 
