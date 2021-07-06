@@ -14,43 +14,40 @@
       "id": 2,
       "title": "Onboarding",
       "description": "Integer sollicitudin leo ut lobortis condimentum. Nunc non nisl a justo imperdiet bibendum at ut est. Etiam eleifend dapibus posuere. Curabitur commodo mi sit amet consequat cursus. Pellentesque sed quam finibus, placerat dolor non, dapibus nisl. Donec aliquet condimentum sapien eu pretium. Integer fermentum ultrices justo eu porttitor. Praesent in venenatis quam. Pellentesque rutrum fermentum eros, nec elementum metus dictum et."
-    },
-    {
-      "title": "Test",
-      "description": "testarea",
-      "id": 3
     }
   ],
-  "participants": [{
-    "id": 0,
-    "first_name":"Bernd",
-    "last_name": "Pfefferberg",
-    "email":"bernd@test.test",
-    "is_active": true,
-    "is_invited": true
-  },
-  {
-    "id": 2,
-    "first_name":"Mo",
-    "last_name": "Chun",
-    "email":"mochun@test.test",
-    "is_active": true,
-    "is_invited": false
-  },
-  {
-    "id": 3,
-    "first_name":"Shirai",
-    "last_name": "Subaru",
-    "email":"shirai@test.test",
-    "is_active": false,
-    "is_invited": true
-  },
-  {
-    "id": 4,
-    "first_name":"Gaspar",
-    "last_name": "Antunes",
-    "email":"gaspar_a@test.test",
-    "is_active": false,
-    "is_invited": false
-  }]
+  "participants": [
+    {
+      "id": 0,
+      "first_name":"Bernd",
+      "last_name": "Pfefferberg",
+      "email":"bernd@test.test",
+      "is_active": true,
+      "is_invited": true
+    },
+    {
+      "id": 2,
+      "first_name":"Mo",
+      "last_name": "Chun",
+      "email":"mochun@test.test",
+      "is_active": true,
+      "is_invited": false
+    },
+    {
+      "id": 3,
+      "first_name":"Shirai",
+      "last_name": "Subaru",
+      "email":"shirai@test.test",
+      "is_active": false,
+      "is_invited": true
+    },
+    {
+      "id": 4,
+      "first_name":"Gaspar",
+      "last_name": "Antunes",
+      "email":"gaspar_a@test.test",
+      "is_active": false,
+      "is_invited": false
+    }
+  ]
 }
