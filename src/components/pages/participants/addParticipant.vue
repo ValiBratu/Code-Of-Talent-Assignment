@@ -30,7 +30,7 @@
                 <br>
                 <label for="email" class="modal-title modal-text inputs-headers first-name-left">Email:</label>
                 <br>
-                <input type="text" id="email" class="name-inputs email-input inputs" placeholder="Email"/>  
+                <input type="email" id="email" class="name-inputs email-input inputs" placeholder="Email"/>  
 
                 <div class="row row-left">
                        <label for="isActive" class="modal-title modal-text inputs-headers ">Active</label>
@@ -131,7 +131,7 @@ export default {
 <style scoped>
 .add-button{
     margin-top: 40px;
-    margin-left: 830px;
+    margin-left: 800px;
 }
 .modal-text{
     color:#0F2B4E;
